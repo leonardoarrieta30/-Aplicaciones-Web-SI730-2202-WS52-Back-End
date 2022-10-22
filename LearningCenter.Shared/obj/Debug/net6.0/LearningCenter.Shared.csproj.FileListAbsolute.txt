@@ -1,0 +1,12 @@
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\bin\Debug\net6.0\LearningCenter.Shared.deps.json
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\bin\Debug\net6.0\LearningCenter.Shared.dll
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\bin\Debug\net6.0\LearningCenter.Shared.pdb
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\obj\Debug\net6.0\LearningCenter.Shared.csproj.AssemblyReference.cache
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\obj\Debug\net6.0\LearningCenter.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\obj\Debug\net6.0\LearningCenter.Shared.AssemblyInfoInputs.cache
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\obj\Debug\net6.0\LearningCenter.Shared.AssemblyInfo.cs
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\obj\Debug\net6.0\LearningCenter.Shared.csproj.CoreCompileInputs.cache
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\obj\Debug\net6.0\LearningCenter.Shared.dll
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\obj\Debug\net6.0\refint\LearningCenter.Shared.dll
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\obj\Debug\net6.0\LearningCenter.Shared.pdb
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Shared\obj\Debug\net6.0\ref\LearningCenter.Shared.dll

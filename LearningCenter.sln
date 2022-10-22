@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.API", "LearningCenter.API\LearningCenter.API.csproj", "{7A3ADE1A-EF7E-46F2-BDBE-5E2AD3AC8F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Domain", "LearningCenter.Domain\LearningCenter.Domain.csproj", "{F7B28867-001C-44CB-84B1-C39D7D76B9CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infraestructure", "LearningCenter.Infraestructure\LearningCenter.Infraestructure.csproj", "{712C8BBB-FA38-4EC7-B18D-1C4AD5AA6CDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Shared", "LearningCenter.Shared\LearningCenter.Shared.csproj", "{8637278A-3362-4624-A5CD-51674769613A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A3ADE1A-EF7E-46F2-BDBE-5E2AD3AC8F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A3ADE1A-EF7E-46F2-BDBE-5E2AD3AC8F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A3ADE1A-EF7E-46F2-BDBE-5E2AD3AC8F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A3ADE1A-EF7E-46F2-BDBE-5E2AD3AC8F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B28867-001C-44CB-84B1-C39D7D76B9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B28867-001C-44CB-84B1-C39D7D76B9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B28867-001C-44CB-84B1-C39D7D76B9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B28867-001C-44CB-84B1-C39D7D76B9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{712C8BBB-FA38-4EC7-B18D-1C4AD5AA6CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712C8BBB-FA38-4EC7-B18D-1C4AD5AA6CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{712C8BBB-FA38-4EC7-B18D-1C4AD5AA6CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{712C8BBB-FA38-4EC7-B18D-1C4AD5AA6CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8637278A-3362-4624-A5CD-51674769613A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8637278A-3362-4624-A5CD-51674769613A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8637278A-3362-4624-A5CD-51674769613A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8637278A-3362-4624-A5CD-51674769613A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
