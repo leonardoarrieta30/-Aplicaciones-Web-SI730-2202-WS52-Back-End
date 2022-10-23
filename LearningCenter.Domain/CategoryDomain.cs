@@ -1,11 +1,19 @@
-﻿namespace LearningCenter.Domain;
+﻿using LearningCenter.Infraestructure;
+
+namespace LearningCenter.Domain;
 
 public class CategoryDomain : ICategoryDomain
 {
-
-    public List<string> getAll()
+    private ICategoryRepository _categoryRepository;
+    
+    public CategoryDomain(ICategoryRepository categoryRepository)
     {
-        throw new NotImplementedException();
+        _categoryRepository = categoryRepository;
+    }
+
+    public IEnumerable<string> getAll()
+    {
+        return _categoryRepository.getAll();
     }
 
     public string getCategoryById(int id)
@@ -14,6 +22,16 @@ public class CategoryDomain : ICategoryDomain
     }
 
     public bool createCategory(string name)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool updateCategory(string name)
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool deleteCategory(int id)
     {
         throw new NotImplementedException();
     }

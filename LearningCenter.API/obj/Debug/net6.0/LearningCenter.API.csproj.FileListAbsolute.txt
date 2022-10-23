@@ -245,3 +245,9 @@ C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\
 C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\Debug\net6.0\LearningCenter.Infraestructure.pdb
 C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\Debug\net6.0\LearningCenter.Shared.dll
 C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\Debug\net6.0\LearningCenter.Shared.pdb
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll

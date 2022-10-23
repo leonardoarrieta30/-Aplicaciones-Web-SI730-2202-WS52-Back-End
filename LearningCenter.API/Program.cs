@@ -1,4 +1,5 @@
 using LearningCenter.Domain;
+using LearningCenter.Infraestructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //con esto cada ves que llame a la interface Icategorydomain internamente lo va a instanciar
+//Dependency Injection
 builder.Services.AddScoped<ICategoryDomain,CategoryDomain>();
+builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
 
 var app = builder.Build();
 

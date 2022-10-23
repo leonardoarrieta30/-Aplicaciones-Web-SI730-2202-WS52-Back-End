@@ -21,9 +21,10 @@ namespace LearningCenter.API.Controllers
         
         // GET: api/Categories
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<string>),200)]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _categoryDomain.getAll();
         }
 
         // GET: api/Categories/5
