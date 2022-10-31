@@ -1,12 +1,26 @@
-﻿namespace LearningCenter.Infraestructure;
+﻿using LearningCenter.Infraestructure.Context;
+
+namespace LearningCenter.Infraestructure;
 
 public class CategoryRepository: ICategoryRepository
 {
-    public IEnumerable<string> getAll()
+    
+    //
+    private LearningCentDB _learningCentDb;
+
+    public CategoryRepository(LearningCentDB learningCentDb)
+    {
+        //esta variable ya esta totalmente ligada a nuestra base de datos
+        _learningCentDb = learningCentDb;
+    }
+    
+    public List<Category> getAll()
     {
         //Conectar a la BD
-        return new string[] { "value 1 repository", "value 2 repository" };
-        
+        //esta base de datos se va a conectar a ala tabla categories y
+        //me va a listar_todo lo que tenga esta tabla
+        return _learningCentDb.Categories.ToList();
+
         //new Tutorial().Category.Name;
     }
 

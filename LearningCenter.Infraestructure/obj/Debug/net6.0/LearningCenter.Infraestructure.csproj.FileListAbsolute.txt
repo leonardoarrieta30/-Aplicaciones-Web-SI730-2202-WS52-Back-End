@@ -13,3 +13,5 @@ C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Infraest
 C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Infraestructure\bin\Debug\net6.0\LearningCenter.Shared.dll
 C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Infraestructure\bin\Debug\net6.0\LearningCenter.Shared.pdb
 C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Infraestructure\obj\Debug\net6.0\LearningCenter.Infraestructure.csproj.CopyComplete
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Infraestructure\bin\Debug\net6.0\LearningCenter.Infraestructure.runtimeconfig.json
+C:\Ciclo 2022-02\Backend-aplicaciones web\LearningCenter\LearningCenter.Infraestructure\obj\Debug\net6.0\LearningCenter.Infraestructure.genruntimeconfig.cache

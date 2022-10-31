@@ -1,8 +1,10 @@
-﻿namespace LearningCenter.Domain;
+﻿using LearningCenter.Infraestructure;
+
+namespace LearningCenter.Domain;
 
 public interface ICategoryDomain
 {
-    IEnumerable<string> getAll();
+    List<Category> getAll();
     string getCategoryById(int id);
     Boolean createCategory(string name);
     Boolean updateCategory(string name);

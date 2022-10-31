@@ -11,7 +11,7 @@ public class CategoryDomain : ICategoryDomain
         _categoryRepository = categoryRepository;
     }
 
-    public IEnumerable<string> getAll()
+    public List<Category> getAll()
     {
         return _categoryRepository.getAll();
     }

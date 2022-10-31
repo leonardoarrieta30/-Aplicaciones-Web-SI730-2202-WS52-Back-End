@@ -2,7 +2,7 @@
 
 public interface ICategoryRepository
 {
-    IEnumerable<string> getAll();
+    List<Category> getAll();
     string getCategoryById(int id);
 
     bool create(string id);

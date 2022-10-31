@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LearningCenter.Domain;
+using LearningCenter.Infraestructure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,7 +23,7 @@ namespace LearningCenter.API.Controllers
         // GET: api/Categories
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<string>),200)]
-        public IEnumerable<string> Get()
+        public List<Category> Get()
         {
             return _categoryDomain.getAll();
         }
