@@ -5,8 +5,8 @@ namespace LearningCenter.Domain;
 public interface ICategoryDomain
 {
     List<Category> getAll();
-    string getCategoryById(int id);
+    Category getCategoryById(int id);
     Boolean createCategory(string name);
-    Boolean updateCategory(string name);
+    Boolean updateCategory(int id, string name);
     Boolean deleteCategory(int id);
 }

@@ -22,7 +22,7 @@ namespace LearningCenter.API.Controllers
         
         // GET: api/Categories
         [HttpGet]
-        [ProducesResponseType(typeof(IEnumerable<string>),200)]
+        [ProducesResponseType(typeof(List<string>),200)]
         public List<Category> Get()
         {
             return _categoryDomain.getAll();
@@ -30,22 +30,26 @@ namespace LearningCenter.API.Controllers
 
         // GET: api/Categories/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public Category Get(int id)
         {
             return _categoryDomain.getCategoryById(id);
         }
 
         // POST: api/Categories
         [HttpPost]
+        [ProducesResponseType(typeof(Boolean),201)]
+        [ProducesResponseType(typeof(List<string>),400)]
+        [ProducesResponseType(500)]
         public Boolean Post([FromBody] string value)
         {
-            return true;
+            return _categoryDomain.createCategory(value);
         }
 
         // PUT: api/Categories/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public Boolean Put(int id, [FromBody] string value)
         {
+            return _categoryDomain.updateCategory(id,value);
         }
 
         // DELETE: api/Categories/5

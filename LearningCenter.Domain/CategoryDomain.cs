@@ -16,19 +16,19 @@ public class CategoryDomain : ICategoryDomain
         return _categoryRepository.getAll();
     }
 
-    public string getCategoryById(int id)
+    public Category getCategoryById(int id)
     {
-        return "body from Domain " +id.ToString();
+        return _categoryRepository.getCategoryById(id);
     }
 
     public bool createCategory(string name)
     {
-        throw new NotImplementedException();
+        return _categoryRepository.create(name);
     }
 
-    public bool updateCategory(string name)
+    public bool updateCategory(int id, string name)
     {
-        throw new NotImplementedException();
+        return _categoryRepository.Update(id,name);
     }
 
     public bool deleteCategory(int id)

@@ -3,7 +3,8 @@
 public interface ICategoryRepository
 {
     List<Category> getAll();
-    string getCategoryById(int id);
+    Category getCategoryById(int id);
 
     bool create(string id);
+    bool Update(int id, string newName);
 }
