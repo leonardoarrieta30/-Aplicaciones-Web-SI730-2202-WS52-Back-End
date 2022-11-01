@@ -33,6 +33,6 @@ public class CategoryDomain : ICategoryDomain
 
     public bool deleteCategory(int id)
     {
-        throw new NotImplementedException();
+        return _categoryRepository.Delete(id);
     }
 }

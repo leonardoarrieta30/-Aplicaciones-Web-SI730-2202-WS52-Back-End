@@ -54,8 +54,9 @@ namespace LearningCenter.API.Controllers
 
         // DELETE: api/Categories/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public Boolean Delete(int id)
         {
+            return _categoryDomain.deleteCategory(id);
         }
     }
 }

@@ -7,4 +7,6 @@ public interface ICategoryRepository
 
     bool create(string id);
     bool Update(int id, string newName);
+
+    bool Delete(int id);
 }

@@ -19,7 +19,7 @@ public class CategoryRepository: ICategoryRepository
         //Conectar a la BD
         //esta base de datos se va a conectar a ala tabla categories y
         //me va a listar_todo lo que tenga esta tabla
-        return _learningCentDb.Categories.ToList(); //LINQ
+        return _learningCentDb.Categories.Where(category =>category.IsActive == true ).ToList(); //LINQ
 
         //new Tutorial().Category.Name;
     }
@@ -49,6 +49,21 @@ public class CategoryRepository: ICategoryRepository
         _learningCentDb.Categories.Update(category);
         _learningCentDb.SaveChanges();
 
+        return true;
+    }
+
+    public bool Delete(int id)
+    {
+        Category category = _learningCentDb.Categories.Find(id);
+        
+        //_learningCentDb.Categories.Remove(category);
+        //_learningCentDb.SaveChanges();
+        category.IsActive = false;
+        category.DateUpdated = DateTime.Now;
+        _learningCentDb.Categories.Update(category);
+        _learningCentDb.SaveChanges();
+
+        
         return true;
     }
 }
