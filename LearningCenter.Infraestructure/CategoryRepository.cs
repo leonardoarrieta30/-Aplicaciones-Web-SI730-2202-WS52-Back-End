@@ -1,4 +1,5 @@
 ﻿using LearningCenter.Infraestructure.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace LearningCenter.Infraestructure;
 
@@ -19,7 +20,11 @@ public class CategoryRepository: ICategoryRepository
         //Conectar a la BD
         //esta base de datos se va a conectar a ala tabla categories y
         //me va a listar_todo lo que tenga esta tabla
-        return _learningCentDb.Categories.Where(category =>category.IsActive == true ).ToList(); //LINQ
+        return _learningCentDb.Categories.Where(category =>category.IsActive == true )
+            //incluimos tutoriales dentro de categories
+            .Include(category => category.Tutorials)
+            .ToList(); 
+        //LINQ
 
         //new Tutorial().Category.Name;
     }
@@ -27,7 +32,9 @@ public class CategoryRepository: ICategoryRepository
     public Category getCategoryById(int id)
     {
         //conectar a la BD o API, al file -->datos
-        return _learningCentDb.Categories.Find(id); //LINQ
+        //ya no me devuelve un listado sino un solo objeto(por id(nunca se repite))
+        return _learningCentDb.Categories.Include(category => category.Tutorials).SingleOrDefault(category => category.Id == id);
+        //LINQ
     }
 
     public bool create(string name)

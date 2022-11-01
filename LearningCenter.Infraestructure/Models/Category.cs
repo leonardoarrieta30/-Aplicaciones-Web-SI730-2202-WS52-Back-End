@@ -10,7 +10,11 @@ public class Category :BaseModel
     
     public int? Quantity { get; set; }
     
-    private List<Tutorial> Tutorials { get; set; }
+    
+    //ejemplo.- categoria programacion me deberian salir todos los tutoriales de programacion asignados
+    //mecanica-> todos los tutoriasles de mecanica
+    
+    public List<Tutorial> Tutorials { get; set; }
     
     
 }
