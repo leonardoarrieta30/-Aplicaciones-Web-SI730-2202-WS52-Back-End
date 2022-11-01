@@ -20,11 +20,19 @@ public class CategoryRepository: ICategoryRepository
         //Conectar a la BD
         //esta base de datos se va a conectar a ala tabla categories y
         //me va a listar_todo lo que tenga esta tabla
-        return _learningCentDb.Categories.Where(category =>category.IsActive == true )
+        var filterByName = "category"; 
+        //sentencia like aca es igual a Contains
+        return _learningCentDb.Categories.Where(category =>category.IsActive == true && category.Name.Contains(filterByName))
             //incluimos tutoriales dentro de categories
             .Include(category => category.Tutorials)
             .ToList(); 
         //LINQ
+
+
+        //var resul = from categorias in _learningCentDb.Categories
+          //  join tutoriales in _learningCentDb.Tutorials on categorias.Id equals tutoriales.CategoryId
+            //select tutoriales.Category;
+
 
         //new Tutorial().Category.Name;
     }
