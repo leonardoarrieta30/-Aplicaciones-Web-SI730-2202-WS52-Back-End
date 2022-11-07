@@ -14,7 +14,7 @@ public class Category :BaseModel
     //ejemplo.- categoria programacion me deberian salir todos los tutoriales de programacion asignados
     //mecanica-> todos los tutoriasles de mecanica
     
-    public List<Tutorial> Tutorials { get; set; }
+    public List<Tutorial>? Tutorials { get; set; }
     
     
 }

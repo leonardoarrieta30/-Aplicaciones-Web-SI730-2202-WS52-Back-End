@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using LearningCenter.API.Resources;
 using LearningCenter.Domain;
 using LearningCenter.Infraestructure;
 using Microsoft.AspNetCore.Http;
@@ -14,9 +16,11 @@ namespace LearningCenter.API.Controllers
     public class CategoriesController : ControllerBase
     {
         private ICategoryDomain _categoryDomain;
-        public CategoriesController(ICategoryDomain categoryDomain)
+        private IMapper _mapper;
+        public CategoriesController(ICategoryDomain categoryDomain, IMapper mapper)
         {
             _categoryDomain = categoryDomain;
+            mapper = this._mapper;
         }
         
         
@@ -40,11 +44,23 @@ namespace LearningCenter.API.Controllers
         [ProducesResponseType(typeof(Boolean),201)]
         [ProducesResponseType(typeof(List<string>),400)]
         [ProducesResponseType(500)]
-        public Boolean Post([FromBody] string value)
+        public async Task<bool> Post([FromBody] CategoryResource categoryInput)
         {
-            return _categoryDomain.createCategory(value);
+            //transferimos informacion de una capa a otra
+          /*  var category = new Category()
+            {
+                Name = categoryInput.Name,
+                Description = categoryInput.Description
+            };*/
+          
+          //en la variable category ya esta toda la configuracion del mapper ya qu esta
+          //inyectada
+          //le digo de donde a donde va a ir, va a ser una conversion de categoryResource a una clase tipo Category
+          //y voy a obetener los datos de category input
+            var category = _mapper.Map<CategoryResource, Category>(categoryInput);
+            return await _categoryDomain.createCategory(category);
         }
-
+        
         // PUT: api/Categories/5
         [HttpPut("{id}")]
         public Boolean Put(int id, [FromBody] string value)

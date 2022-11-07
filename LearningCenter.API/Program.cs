@@ -30,6 +30,13 @@ builder.Services.AddDbContext<LearningCentDB>(
     //para poder conectarnos con la base de datos y manejarlo con entitny framework y la bd
     dbContextOptions => dbContextOptions.UseMySql(connectionString, serverVersion));
 
+//vamos a trabajar con automapper
+//y aca lo tenemos ya mapeado
+//y lo ponemos antes que se ejecute la aplicacion(var app = builder.Build();)
+builder.Services.AddAutoMapper(
+    typeof(LearningCenter.API.Mapper.ModelToResource),
+    typeof(LearningCenter.API.Mapper.ResourceToModel)
+);
 
 //esto levanta la aplicacion
 var app = builder.Build();

@@ -6,7 +6,7 @@ public interface ICategoryDomain
 {
     List<Category> getAll();
     Category getCategoryById(int id);
-    Boolean createCategory(string name);
+    Task<bool> createCategory(Category category);
     Boolean updateCategory(int id, string name);
     Boolean deleteCategory(int id);
 }

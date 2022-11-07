@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ZJWYvHJHFpDLc5wtP6Jmnc8PTx4RsnaEzK6Co8OhgwYFE0IFIgWv8jTfRBhuHC2S3kRA34l+ySNxoLQznYRhhA==",
+  "dgSpecHash": "Ood6/TTrfethAXTvZNT7pn1KPQYli4h/c+5LzSciAJ2idd1UQbj4wDjYl96DZ+c7m3szuYEcf6FA5Bo1hndGcQ==",
   "success": true,
   "projectFilePath": "C:\\Ciclo 2022-02\\Backend-aplicaciones web\\LearningCenter\\LearningCenter.Infraestructure\\LearningCenter.Infraestructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\leona\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\leona\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\leona\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\leona\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\leona\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.10\\microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "C:\\Users\\leona\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.10\\microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",
     "C:\\Users\\leona\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.10\\microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512",

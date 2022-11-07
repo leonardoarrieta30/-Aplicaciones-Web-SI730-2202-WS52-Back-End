@@ -21,9 +21,9 @@ public class CategoryDomain : ICategoryDomain
         return _categoryRepository.getCategoryById(id);
     }
 
-    public bool createCategory(string name)
+    public async Task<bool> createCategory(Category category)
     {
-        return _categoryRepository.create(name);
+        return await _categoryRepository.create(category);
     }
 
     public bool updateCategory(int id, string name)

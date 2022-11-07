@@ -20,6 +20,7 @@ public class CategoryRepository: ICategoryRepository
         //Conectar a la BD
         //esta base de datos se va a conectar a ala tabla categories y
         //me va a listar_todo lo que tenga esta tabla
+        //vamos a filtrar por nombre
         var filterByName = "category"; 
         //sentencia like aca es igual a Contains
         return _learningCentDb.Categories.Where(category =>category.IsActive == true && category.Name.Contains(filterByName))
@@ -45,14 +46,33 @@ public class CategoryRepository: ICategoryRepository
         //LINQ
     }
 
-    public bool create(string name)
+    public async Task<bool> create(Category category)
     {
-        Category category = new Category();
-        category.Name = name;
-        category.Description = "Description " + name;
+        //Category category = new Category();
+        //category.Name = name;
+        //category.Description = "Description " + name;
 
-        _learningCentDb.Categories.Add(category);
-        _learningCentDb.SaveChanges();
+        //aca va a empezar la transaccion
+        _learningCentDb.Database.BeginTransactionAsync();
+
+        //si cualquiera de los 2 transacciones falla va a ser un rollback se va a desaseer 
+
+        try
+        {
+            _learningCentDb.Categories.AddAsync(category);
+            _learningCentDb.SaveChangesAsync();
+
+        }
+        catch (Exception ex)
+        {
+            _learningCentDb.Database.RollbackTransactionAsync();
+        }
+        
+       
+        //si de las 2 transacciones se hace bien va a hacer un commit
+        _learningCentDb.Database.CommitTransactionAsync();
+        
+        
         return true;
     }
 
